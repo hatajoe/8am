@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package protocol;
+
+service UserService {
+    rpc ListUser(ListUserRequestType) returns (ListUserResponseType) {}
+    rpc RegisterUser(RegisterUserRequestType) returns (RegisterUserResponseType) {}
+}
+
+message User {
+    string id = 1;
+    string email = 2;
+}
+
+message ListUserRequestType {
+
+}
+
+message ListUserResponseType {
+    repeated User users = 1;
+}
+
+message RegisterUserResponseType {
+
+}
+
+message RegisterUserRequestType {
+    string email = 1;
+}
+
