@@ -5,7 +5,6 @@ This is sample project using gRPC with DDD architecture.
 
 ```
 % npm install -g grpcc
-% govender sync
 % make protoc
 % cat 'PORT=50055' > .env
 ```
